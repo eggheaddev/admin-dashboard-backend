@@ -9,6 +9,8 @@ app.use(cors());
 
 app.use(routes);
 
-app.listen(3000, () => {
+const port = process.env.PORT || 2035;
+
+app.listen(port, () => {
   console.log("server on port 3000");
 });
